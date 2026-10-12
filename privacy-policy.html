@@ -1,157 +1,348 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Official Privacy Policy for ZAFLIN — Elemental Block Puzzle.">
-  <meta name="color-scheme" content="light">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy — ZAFLIN — Elemental Block Puzzle</title>
   <style>
-    :root { color-scheme: light; --ink: #202124; --muted: #5f6368; --line: #e5e7eb; --link: #1558d6; --paper: #ffffff; --canvas: #f7f8fa; }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--canvas); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.72; font-size: 16px; }
-    header { padding: 34px 18px 26px; text-align: center; background: var(--paper); border-bottom: 1px solid var(--line); }
-    header .brand { margin: 0; font-size: clamp(1.45rem, 4vw, 2rem); line-height: 1.25; letter-spacing: -0.035em; }
-    header .subtitle { margin: 9px 0 0; color: var(--muted); font-size: 1.05rem; }
-    main { width: min(900px, calc(100% - 28px)); margin: 28px auto 44px; padding: clamp(20px, 5vw, 48px); background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 3px 16px rgba(0,0,0,.035); overflow-wrap: anywhere; }
-    h1 { margin-top: 0; font-size: clamp(1.7rem, 5vw, 2.2rem); line-height: 1.25; letter-spacing: -0.025em; }
-    h2 { margin: 2rem 0 1rem; line-height: 1.35; font-size: 1.4rem; }
-    h3 { margin: 1.75rem 0 .65rem; line-height: 1.4; font-size: 1.12rem; }
-    p, ul, ol, blockquote { margin-top: .65rem; margin-bottom: 1rem; }
-    ul, ol { padding-left: 1.5rem; }
-    li { padding-left: .15rem; margin: .35rem 0; }
-    a { color: var(--link); text-decoration: underline; text-underline-offset: 2px; }
-    a:focus-visible { outline: 3px solid #87aaff; outline-offset: 3px; border-radius: 2px; }
-    code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; background: #f0f2f5; padding: .12em .35em; border-radius: 4px; }
-    blockquote { margin-left: 0; padding: .15rem 0 .15rem 1rem; border-left: 3px solid #c9ced6; color: #3c4043; }
-    hr { border: 0; border-top: 1px solid var(--line); margin: 1.7rem 0; }
-    footer { width: min(900px, calc(100% - 28px)); margin: -22px auto 28px; color: var(--muted); text-align: center; font-size: .88rem; }
-    @media (max-width: 520px) { body { font-size: 15px; } header { padding-top: 26px; } main { margin-top: 16px; padding: 20px 17px; border-radius: 12px; } }
-    @media print { body { background: white; } main { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; } header, footer { display: none; } a { color: inherit; } }
+    :root {
+      --bg-color: #0b111e;
+      --card-bg: #131c2e;
+      --text-main: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+      --border-color: #1e293b;
+      --code-bg: #0f172a;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 36px 28px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+    h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.25;
+    }
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #cbd5e1;
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 14px;
+      font-size: 0.95rem;
+    }
+    ul, ol {
+      margin-bottom: 14px;
+      padding-left: 24px;
+      font-size: 0.95rem;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover, a:focus {
+      text-decoration: underline;
+      color: var(--accent-hover);
+    }
+    .highlight-box {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 18px 0;
+      font-size: 0.9rem;
+    }
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      margin-top: 36px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-color);
+      font-size: 0.9rem;
+    }
+    footer {
+      margin-top: 28px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    @media (max-width: 600px) {
+      body {
+        padding: 12px 8px;
+      }
+      .container {
+        padding: 22px 16px;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="brand">ZAFLIN — Elemental Block Puzzle</h1>
-  </header>
-  <main>
-<h2>Official Privacy Policy</h2>
-<p><strong>Effective Date:</strong> October 12, 2026<br />
-<strong>Application Version:</strong> 1.0.0<br />
-<strong>Package Identifier:</strong> <code>com.zaflin.game</code><br />
-<strong>Official Contact:</strong> contact.zaflin@gmail.com</p>
-<hr />
-<h3>1. Overview and Developer Identity</h3>
-<p>This Privacy Policy describes how <strong>ZAFLIN — Elemental Block Puzzle</strong> (&ldquo;ZAFLIN&rdquo;, &ldquo;the Game&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) treats information when you install, access, or play the application on Android devices.</p>
-<p>ZAFLIN is developed and published by an independent developer. Our official contact and privacy support email address is:</p>
-<blockquote>
-<p><strong>Privacy &amp; Support Contact:</strong> <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a></p>
-</blockquote>
-<p>We believe in transparent, minimal data practices. ZAFLIN does not require user account registration, does not maintain remote user databases, and does not conduct proprietary behavioral profiling.</p>
-<hr />
-<h3>2. Information Processed by the Game</h3>
-<h4>A. Information Stored Locally on Your Device</h4>
-<p>ZAFLIN stores certain gameplay data exclusively in local device storage using standard Android sandbox storage (via <code>SharedPreferences</code> and local application document storage). This data never leaves your device and is not transmitted to any developer server:</p>
-<ul>
-<li><strong>Active Game Progress &amp; Snapshots:</strong> 9×9 board cell occupation, current score, 3 piece-tray slots, combo streaks, and active power-up states, stored to seamlessly restore your game when closing and reopening the app.</li>
-<li><strong>High Score:</strong> Your best score record.</li>
-<li><strong>User Settings &amp; Preferences:</strong> Sound effects on/off, background music/ambient audio on/off, and haptic vibration on/off.</li>
-<li><strong>Daily Elemental Unlock Progress:</strong> The number of completed rewarded advertisements (0, 1, or 2) watched for each of the 12 Elemental worlds for the active local calendar day, and the local date key (<code>YYYY-MM-DD</code>).</li>
-<li><strong>Run Statistics:</strong> Completed run count used locally to govern the frequency capping of interstitial advertisements.</li>
-<li><strong>Tutorial State:</strong> Whether you have completed or dismissed the introductory gameplay guide.</li>
-</ul>
-<h4>B. Information Processed by Third-Party Advertising Technology</h4>
-<p>ZAFLIN integrates the <strong>Google Mobile Ads SDK</strong> (AdMob, version 5.3.1) and the <strong>Google User Messaging Platform (UMP)</strong> to display advertisements and collect consent preferences. When your device is connected to the Internet, Google Mobile Ads may collect and process certain device and network data in accordance with Google's independent privacy policies:</p>
-<ul>
-<li><strong>Device Identifiers:</strong> Google Advertising ID (GAID), Android ID, or other device/network identifiers.</li>
-<li><strong>Approximate Location:</strong> Coarse location inferred from your IP address. (ZAFLIN does not request, collect, or access precise GPS location data).</li>
-<li><strong>Ad Interaction &amp; Diagnostic Data:</strong> Ad views, clicks, video completion events, and technical diagnostic telemetry needed to deliver ads, verify rewards, and prevent fraudulent ad traffic.</li>
-</ul>
-<p>For more information on how Google processes user data in advertising:</p>
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use our services</a></li>
-</ul>
-<h4>C. Communications Received Directly</h4>
-<p>If you contact us directly via email at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>, we receive your email address and any information you include in your message. We use this information solely to respond to your inquiry, provide customer assistance, or process privacy requests.</p>
-<h4>D. Services and Data Practices Not Present</h4>
-<ul>
-<li>ZAFLIN <strong>does not</strong> offer user accounts, logins, or social network integration.</li>
-<li>ZAFLIN <strong>does not</strong> include in-app purchases, paid subscriptions, or financial transactions.</li>
-<li>ZAFLIN <strong>does not</strong> use Firebase Analytics, Google Analytics, Crashlytics, Sentry, Unity Ads, or third-party behavioral analytics SDKs.</li>
-<li>ZAFLIN <strong>does not</strong> access device contacts, camera, microphone, photos, storage outside the sandbox, or precise GPS location.</li>
-</ul>
-<hr />
-<h3>3. Advertisements and Rewarded Actions</h3>
-<p>ZAFLIN uses advertising to support its free-to-play model:</p>
-<ul>
-<li><strong>Rewarded Video Advertisements (Optional):</strong><ul>
-<li><em>Daily Elemental Themes:</em> Watching two completed rewarded ads grants temporary access to any of the 12 Elemental worlds for the active local calendar day. (Classic mode is always free and requires zero ads).</li>
-<li><em>Change Pieces Power-Up:</em> Watching a completed rewarded ad refreshes all 3 tray pieces (limited to once per game run).</li>
-<li><em>Elemental Blast Power-Up:</em> Watching a completed rewarded ad charges a power-up to clear an occupied cell's row and column cross (limited to once per game run).</li>
-</ul>
-</li>
-<li><strong>Interstitial Advertisements:</strong> Conditional full-screen ads shown at natural game-over transitions when selecting Play Again:<ul>
-<li>Zero interstitials are shown during your first three completed runs.</li>
-<li>Thereafter, at most once every three completed runs (<code>runs % 3 == 0</code>).</li>
-<li>Minimum 90-second cooldown between interstitial impressions.</li>
-</ul>
-</li>
-</ul>
-<p>In Classic mode, the game can be played entirely offline without an Internet connection.</p>
-<hr />
-<h3>4. Consent Management &amp; Privacy Choices</h3>
-<p>Where required by regional data protection regulations (such as GDPR in the EEA/UK and applicable US state privacy laws), ZAFLIN employs Google's certified <strong>User Messaging Platform (UMP)</strong> SDK to present a consent-gathering interface on launch.</p>
-<p>You may review or modify your advertising consent preferences at any time within the game:</p>
-<blockquote>
-<p><strong>To update ad consent:</strong> Open in-game <strong>Settings</strong> &rarr; Tap <strong>Ad Privacy &amp; Consent Settings</strong>.</p>
-</blockquote>
-<hr />
-<h3>5. Purposes of Processing</h3>
-<p>Information is processed exclusively for:</p>
-<ol>
-<li>Core gameplay delivery (board state, piece generation, score calculation).</li>
-<li>Local persistence (restoring active runs and remembering audio/haptic settings).</li>
-<li>Advertising delivery &amp; verification (serving ads, verifying reward completion, fraud prevention).</li>
-<li>Regulatory compliance (collecting and maintaining consent records via Google UMP).</li>
-<li>Support communication (responding to user inquiries submitted to <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>).</li>
-</ol>
-<hr />
-<h3>6. Data Sharing and International Transfers</h3>
-<p>We do not sell, rent, or trade your personal data. Data collected by third-party SDKs is shared directly with <strong>Google LLC</strong> and its advertising partners for ad serving, measurement, and fraud prevention purposes. Information processed by the Google Mobile Ads SDK may be transferred to and processed on servers located in the United States and other countries under Google's data transfer mechanisms.</p>
-<hr />
-<h3>7. Data Retention and Deletion</h3>
-<ul>
-<li><strong>Local Device Data:</strong> Retained indefinitely until you clear application data via Android Settings (<em>Settings &gt; Apps &gt; ZAFLIN &gt; Storage &gt; Clear Data</em>) or uninstall the application.</li>
-<li><strong>Support Inquiries:</strong> Retained only as long as necessary to resolve your request, after which they are deleted.</li>
-<li><strong>Third-Party Ad Data:</strong> Retained by Google in accordance with Google's published data retention policies.</li>
-</ul>
-<hr />
-<h3>8. Your Privacy Rights</h3>
-<ul>
-<li><strong>EEA &amp; UK (GDPR / UK GDPR):</strong> Right of access, rectification, erasure, restriction, objection, data portability, and withdrawal of consent (via in-game <em>Ad Privacy &amp; Consent Settings</em> or Android settings). Right to lodge a complaint with a supervisory authority.</li>
-<li><strong>India (DPDP Act, 2023):</strong> Right to access summary of personal data processed, seek correction or erasure of personal data provided to the developer, and access grievance redressal by contacting <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a> in accordance with notified commencement dates.</li>
-<li><strong>United States (State Privacy Laws, including CCPA/CPRA):</strong> We do not sell your personal information or share it for cross-context behavioral advertising without consent. You may reset or limit ad tracking via Android device settings.</li>
-</ul>
-<hr />
-<h3>9. Children's Privacy</h3>
-<p>ZAFLIN is designed as a geometric block puzzle game intended for a general audience. The game does not knowingly collect personal data from children under the age of 13 (or under 16 where required by local law). If you believe that a child has provided us with personal information, please contact <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a> to request deletion.</p>
-<hr />
-<h3>10. Data Security</h3>
-<p>All local game data is sandboxed by Android and is not accessible to other applications under standard operating conditions. Network interactions conducted by Google Mobile Ads and UMP SDKs use industry-standard Transport Layer Security (TLS/HTTPS) encryption in transit.</p>
-<hr />
-<h3>11. Changes to this Privacy Policy</h3>
-<p>Any updated version will be indicated by an updated &ldquo;Effective Date&rdquo; at the top of this document and made available within the game and at this publication destination.</p>
-<hr />
-<h3>12. Contact Information</h3>
-<ul>
-<li><strong>Developer Email:</strong> <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a></li>
-<li><strong>Game Title:</strong> ZAFLIN — Elemental Block Puzzle</li>
-<li><strong>Package Name:</strong> <code>com.zaflin.game</code></li>
-</ul>
+  <div class="container">
+    <header>
+      <h1>ZAFLIN — Elemental Block Puzzle</h1>
+      <div class="subtitle">Official Privacy Policy</div>
+      <div class="meta">
+        <strong>Effective Date:</strong> October 12, 2026 &bull; 
+        <strong>Application Version:</strong> 1.0.0 &bull; 
+        <strong>Package ID:</strong> com.zaflin.game
+      </div>
+    </header>
 
-  </main>
-  <footer>ZAFLIN — Elemental Block Puzzle · Privacy Policy · Contact: <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a></footer>
+    <main>
+      <section>
+        <h2>1. Overview and Developer Identity</h2>
+        <p>
+          This Privacy Policy describes how <strong>ZAFLIN — Elemental Block Puzzle</strong> (&ldquo;ZAFLIN&rdquo;, &ldquo;the Game&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) treats information when you install, access, or play the application on Android devices.
+        </p>
+        <p>
+          ZAFLIN is developed and published by an independent developer. Our official contact and privacy support email address is:
+        </p>
+        <div class="highlight-box">
+          <strong>Privacy &amp; Support Contact:</strong> <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>
+        </div>
+        <p>
+          We believe in transparent, minimal data practices. ZAFLIN does not require user account registration, does not maintain remote user databases, and does not conduct proprietary behavioral profiling.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Information Processed by the Game</h2>
+        
+        <h3>A. Information Stored Locally on Your Device</h3>
+        <p>
+          ZAFLIN stores certain gameplay data exclusively in local device storage using standard Android sandbox storage (via SharedPreferences and local application document storage). This data never leaves your device and is not transmitted to any developer server. It includes:
+        </p>
+        <ul>
+          <li><strong>Active Game Progress &amp; Snapshots:</strong> The 9&times;9 board tile arrangement, current score, 3 piece-tray slots, combo streak, and active power-up statuses, stored so you can resume your game seamlessly if the application is closed or restarted.</li>
+          <li><strong>High Score:</strong> Your best score record.</li>
+          <li><strong>User Settings &amp; Preferences:</strong> Sound effects toggle, background music / ambient audio toggle, and haptic vibration toggle.</li>
+          <li><strong>Daily Elemental Unlock Progress:</strong> The number of completed rewarded advertisements (0, 1, or 2) watched for each of the 12 Elemental worlds for the active local calendar day, and the local date key (<small>YYYY-MM-DD</small>).</li>
+          <li><strong>Run Statistics:</strong> Completed run count used locally to govern the frequency capping of interstitial advertisements.</li>
+          <li><strong>Tutorial State:</strong> Whether you have completed or dismissed the introductory gameplay guide.</li>
+        </ul>
+
+        <h3>B. Information Processed by Third-Party Advertising Technology</h3>
+        <p>
+          ZAFLIN integrates the <strong>Google Mobile Ads SDK</strong> (AdMob, version 5.3.1) and the <strong>Google User Messaging Platform (UMP)</strong> to display advertisements and collect consent preferences. When your device is connected to the Internet, Google Mobile Ads may collect and process certain device and network data in accordance with Google's independent privacy policies. This data may include:
+        </p>
+        <ul>
+          <li><strong>Device Identifiers:</strong> Google Advertising ID (GAID), Android ID, or other device/network identifiers.</li>
+          <li><strong>Approximate Location:</strong> Coarse location inferred from your IP address. (ZAFLIN does not request, collect, or access precise GPS location data).</li>
+          <li><strong>Ad Interaction &amp; Diagnostic Data:</strong> Ad views, clicks, video completion events, and technical diagnostic telemetry needed to deliver ads, verify rewards, and prevent fraudulent ad traffic.</li>
+        </ul>
+        <p>
+          For more information on how Google processes user data in advertising, please review Google's official privacy documentation:
+          <br>
+          &bull; <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>
+          <br>
+          &bull; <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>
+        </p>
+
+        <h3>C. Communications Received Directly</h3>
+        <p>
+          If you contact us directly via email at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>, we receive your email address and any information you include in your message. We use this information solely to respond to your inquiry, provide customer assistance, or process privacy requests.
+        </p>
+
+        <h3>D. Services and Data Practices Not Present</h3>
+        <div class="highlight-box">
+          To ensure clarity and avoid ambiguity:
+          <ul>
+            <li>ZAFLIN <strong>does not</strong> offer user accounts, logins, or social network integration.</li>
+            <li>ZAFLIN <strong>does not</strong> include in-app purchases, paid subscriptions, or financial transactions.</li>
+            <li>ZAFLIN <strong>does not</strong> use Firebase Analytics, Google Analytics, Crashlytics, Sentry, Unity Ads, or third-party behavioral analytics SDKs.</li>
+            <li>ZAFLIN <strong>does not</strong> access device contacts, camera, microphone, photos, storage outside the sandbox, or precise GPS location.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Advertisements and Rewarded Actions</h2>
+        <p>
+          ZAFLIN uses advertising to support its free-to-play model:
+        </p>
+        <ul>
+          <li><strong>Rewarded Video Advertisements:</strong> These ads are strictly optional and only play when you explicitly request an in-game benefit:
+            <ul>
+              <li><em>Daily Elemental Themes:</em> Watching two completed rewarded ads grants temporary access to any of the 12 Elemental worlds for the active local calendar day. (Classic mode is always free and requires zero ads).</li>
+              <li><em>Change Pieces Power-Up:</em> Watching a completed rewarded ad refreshes all 3 tray pieces (limited to once per game run).</li>
+              <li><em>Elemental Blast Power-Up:</em> Watching a completed rewarded ad charges a power-up to clear an occupied cell's row and column cross (limited to once per game run).</li>
+            </ul>
+          </li>
+          <li><strong>Interstitial Advertisements:</strong> Full-screen ads that may appear conditionally at natural game-over transitions when selecting Play Again. Interstitials are strictly frequency-gated:
+            <ul>
+              <li>Zero interstitials are shown during your first three completed runs.</li>
+              <li>Thereafter, an interstitial may be considered at most once every three completed runs (runs % 3 == 0).</li>
+              <li>A mandatory minimum 90-second cooldown is enforced between interstitial impressions.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Ad availability depends on network connectivity and Google AdMob inventory. In Classic mode, the game can be played entirely offline without an Internet connection.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Consent Management &amp; Privacy Choices</h2>
+        <p>
+          Where required by regional data protection regulations (such as the General Data Protection Regulation (GDPR) in the European Economic Area (EEA), the UK GDPR, and applicable US state privacy laws), ZAFLIN employs Google's certified <strong>User Messaging Platform (UMP)</strong> SDK to present a consent-gathering interface on launch.
+        </p>
+        <p>
+          You may review or modify your advertising consent preferences at any time within the game:
+        </p>
+        <div class="highlight-box">
+          <strong>To update ad consent:</strong> Open in-game <strong>Settings</strong> &rarr; Tap <strong>Ad Privacy &amp; Consent Settings</strong>.
+        </div>
+        <p>
+          If you are located in a region where UMP is not required by law, Google Mobile Ads serves advertisements in accordance with applicable platform policies and your device-level advertising settings.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Purposes of Processing</h2>
+        <p>
+          Information is processed exclusively for the following verified purposes:
+        </p>
+        <ul>
+          <li><strong>Core Gameplay Delivery:</strong> Maintaining board state, piece generation, and score calculation.</li>
+          <li><strong>Local Persistence:</strong> Restoring active game runs and remembering sound/haptic preferences.</li>
+          <li><strong>Advertising Delivery &amp; Verification:</strong> Delivering rewarded and interstitial ads, verifying completion to grant power-ups, and preventing fraudulent impressions.</li>
+          <li><strong>Regulatory Compliance:</strong> Collecting, applying, and maintaining consent records via Google UMP.</li>
+          <li><strong>Support Communication:</strong> Responding to user inquiries or privacy requests submitted to <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Data Sharing and International Transfers</h2>
+        <p>
+          We do not sell, rent, or trade your personal data. Data collected by third-party SDKs is shared directly with <strong>Google LLC</strong> and its advertising partners for ad serving, measurement, and fraud prevention purposes as disclosed above.
+        </p>
+        <p>
+          Because Google operates global infrastructure, information processed by the Google Mobile Ads SDK may be transferred to and processed on servers located in the United States and other countries outside your country of residence, under Google's data transfer mechanisms and standard contractual clauses.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Data Retention and Deletion</h2>
+        <ul>
+          <li><strong>Local Device Data:</strong> Retained on your device indefinitely until you clear application data via Android Settings (<em>Settings &gt; Apps &gt; ZAFLIN &gt; Storage &gt; Clear Storage / Clear Data</em>) or uninstall the application.</li>
+          <li><strong>Support Inquiries:</strong> Emails sent to our support address are retained only as long as necessary to resolve your request and any directly related follow-up, after which they are deleted.</li>
+          <li><strong>Third-Party Ad Data:</strong> Retained by Google in accordance with Google's published data retention policies. We do not maintain or possess independent copies of this data.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>8. Your Privacy Rights</h2>
+        <p>
+          Depending on your location, you may have specific statutory rights regarding personal data:
+        </p>
+        <ul>
+          <li><strong>European Economic Area (EEA) and United Kingdom (GDPR / UK GDPR):</strong> You have the right to access, rectify, or erase personal data, restrict or object to processing, request data portability, and withdraw previously granted consent at any time (via in-game <em>Ad Privacy &amp; Consent Settings</em> or Android device settings). You also have the right to lodge a complaint with your local data protection supervisory authority.</li>
+          <li><strong>India (Digital Personal Data Protection Act, 2023):</strong> To the extent provisions of the DPDP Act, 2023 and the notified DPDP Rules have entered into legal force in accordance with the Government of India's phased commencement schedule, you have the right to access a summary of personal data processed, seek correction or erasure of personal data provided to the developer, and access grievance redressal by contacting us at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>.</li>
+          <li><strong>United States (State Privacy Laws, including California CCPA/CPRA):</strong> We do not sell your personal information or share it for cross-context behavioral advertising without your consent. You may reset or limit ad tracking at any time via Android Settings (<em>Settings &gt; Google &gt; Ads &gt; Delete advertising ID</em> or <em>Reset advertising ID</em>).</li>
+        </ul>
+        <p>
+          To exercise any applicable rights regarding direct communications, please email <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Children's Privacy</h2>
+        <p>
+          ZAFLIN is designed as a geometric block puzzle game intended for a general audience. The game does not knowingly collect personal data from children under the age of 13 (or under 16 where required by local law). If you believe that a child has provided us with personal information, please contact us at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>, and we will promptly take steps to delete any such communication.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Data Security</h2>
+        <p>
+          All local game data is sandboxed by the Android operating system and is not accessible to other applications under standard Android operating conditions. Network interactions conducted by the Google Mobile Ads and UMP SDKs use industry-standard Transport Layer Security (TLS/HTTPS) encryption in transit.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Changes to this Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy from time to time to reflect changes in our practices, legal requirements, or SDK updates. Any updated version will be indicated by an updated &ldquo;Effective Date&rdquo; at the top of this document and made available within the game and at this publication destination.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Contact Information</h2>
+        <p>
+          If you have questions, comments, or concerns regarding this Privacy Policy or our data practices, please reach out to:
+        </p>
+        <div class="highlight-box">
+          <strong>Developer Email:</strong> <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a><br>
+          <strong>Game:</strong> ZAFLIN &mdash; Elemental Block Puzzle<br>
+          <strong>Package Name:</strong> com.zaflin.game
+        </div>
+      </section>
+    </main>
+
+    <div class="nav-links">
+      <span>Related Document:</span>
+      <a href="terms_of_service.html">Terms of Service &rarr;</a>
+    </div>
+
+    <footer>
+      &copy; 2026 ZAFLIN &bull; All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
