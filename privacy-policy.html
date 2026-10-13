@@ -175,7 +175,7 @@
           <li><strong>Daily Elemental Unlock Progress:</strong> The number of completed rewarded advertisements (0, 1, or 2) watched for each of the 12 Elemental worlds for the active local calendar day, and the local date key (<small>YYYY-MM-DD</small>).</li>
           <li><strong>Run Statistics:</strong> Completed run count used locally to govern the frequency capping of interstitial advertisements.</li>
           <li><strong>Tutorial State:</strong> Whether you have completed or dismissed the introductory gameplay guide.</li>
-          <li><strong>Age Verification &amp; Safety Category:</strong> Your age category (&lsquo;child&rsquo;, &lsquo;teen&rsquo;, or &lsquo;adult&rsquo;) is saved locally to configure age-appropriate advertising and privacy protections. <em>Zero-DOB Guarantee:</em> Your actual date of birth is processed only in local memory to calculate your age group and is immediately discarded; it is never stored, logged, or transmitted anywhere.</li>
+          <li><strong>Age Category &amp; Advertising Settings:</strong> Your age category (&lsquo;child&rsquo;, &lsquo;teen&rsquo;, or &lsquo;adult&rsquo;) is saved locally to configure age-appropriate advertising and privacy protections. <em>Zero-DOB Guarantee:</em> Your actual date of birth is processed only in local memory to calculate your age group and is immediately discarded; it is never stored, logged, or transmitted anywhere.</li>
         </ul>
 
         <h3>B. Information Processed by Third-Party Advertising Technology</h3>
@@ -305,7 +305,7 @@
       <section>
         <h2>9. Children's Privacy &amp; Age-Appropriate Protections</h2>
         <p>
-          ZAFLIN is designed as a geometric block puzzle game intended for players of all ages, including children, teenagers, and adults. To ensure compliance with children's privacy laws worldwide (including the U.S. Children's Online Privacy Protection Act / COPPA and European GDPR-K), ZAFLIN implements a neutral age verification screen upon initial launch:
+          ZAFLIN is designed for players of all ages, including children, teenagers, and adults. To support age-appropriate advertising and privacy protections, ZAFLIN implements a neutral age screen on first launch. The screen determines which advertising-treatment settings are applied based on the age category entered:
         </p>
         <ul>
           <li><strong>Neutral Date-of-Birth Selection:</strong> Players are prompted to enter their birth date using unselected selectors (month, day, year). The interface does not nudge, preselect any date, or pressure the user to declare an older age.</li>
@@ -314,7 +314,7 @@
           <li><strong>Child-Directed Advertising Treatment (&lt;13):</strong> If the player is under 13 years old (or if the gate is skipped, incomplete, or bypassed), Google Mobile Ads is strictly configured with TagForChildDirectedTreatment enabled (<small>TFCD = yes</small>), TagForUnderAgeOfConsent unspecified (<small>TFUA = unspecified</small>, adhering to Google's mutual exclusivity rule), G-rated ad content rating (<small>MaxAdContentRating.g</small>), and Google UMP <small>tagForUnderAgeOfConsent = true</small>.</li>
           <li><strong>Teen Treatment (13–17):</strong> Configured with TFCD disabled (<small>TFCD = no</small>), TagForUnderAgeOfConsent enabled (<small>TFUA = yes</small>), PG-rated ad content (<small>MaxAdContentRating.pg</small>), and Google UMP <small>tagForUnderAgeOfConsent = true</small>.</li>
           <li><strong>Adult Treatment (18+):</strong> Configured with standard ad settings (<small>TFCD = no</small>, <small>TFUA = no</small>, and T-rated ad content rating <small>MaxAdContentRating.t</small>).</li>
-          <li><strong>Fail-Closed Default:</strong> If the game is played offline or without completing the age screen, all advertising parameters fail-closed to strict child-safe defaults.</li>
+          <li><strong>Fail-Closed Default:</strong> If the age screen is skipped, dismissed, or uncompleted, or if local preference storage is unavailable, advertising parameters strictly fail-closed to child-safe defaults. Because the neutral age calculation runs entirely in local device memory, it functions offline, and any confirmed age category is preserved across offline and online sessions.</li>
           <li><strong>Age Review Settings:</strong> Players and parents can review or adjust their age category setting at any time via in-game <strong>Settings &rarr; Review Age Settings</strong>.</li>
         </ul>
         <p>
