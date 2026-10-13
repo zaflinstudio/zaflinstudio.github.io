@@ -138,7 +138,7 @@
       <h1>ZAFLIN — Elemental Block Puzzle</h1>
       <div class="subtitle">Official Privacy Policy</div>
       <div class="meta">
-        <strong>Effective Date:</strong> October 12, 2026 &bull; 
+        <strong>Effective Date:</strong> October 13, 2026 &bull; 
         <strong>Application Version:</strong> 1.0.0 &bull; 
         <strong>Package ID:</strong> com.zaflin.game
       </div>
@@ -175,6 +175,7 @@
           <li><strong>Daily Elemental Unlock Progress:</strong> The number of completed rewarded advertisements (0, 1, or 2) watched for each of the 12 Elemental worlds for the active local calendar day, and the local date key (<small>YYYY-MM-DD</small>).</li>
           <li><strong>Run Statistics:</strong> Completed run count used locally to govern the frequency capping of interstitial advertisements.</li>
           <li><strong>Tutorial State:</strong> Whether you have completed or dismissed the introductory gameplay guide.</li>
+          <li><strong>Age Verification &amp; Safety Category:</strong> Your age category (&lsquo;child&rsquo;, &lsquo;teen&rsquo;, or &lsquo;adult&rsquo;) is saved locally to configure age-appropriate advertising and privacy protections. <em>Zero-DOB Guarantee:</em> Your actual date of birth is processed only in local memory to calculate your age group and is immediately discarded; it is never stored, logged, or transmitted anywhere.</li>
         </ul>
 
         <h3>B. Information Processed by Third-Party Advertising Technology</h3>
@@ -302,9 +303,22 @@
       </section>
 
       <section>
-        <h2>9. Children's Privacy</h2>
+        <h2>9. Children's Privacy &amp; Age-Appropriate Protections</h2>
         <p>
-          ZAFLIN is designed as a geometric block puzzle game intended for a general audience. The game does not knowingly collect personal data from children under the age of 13 (or under 16 where required by local law). If you believe that a child has provided us with personal information, please contact us at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>, and we will promptly take steps to delete any such communication.
+          ZAFLIN is designed as a geometric block puzzle game intended for players of all ages, including children, teenagers, and adults. To ensure compliance with children's privacy laws worldwide (including the U.S. Children's Online Privacy Protection Act / COPPA and European GDPR-K), ZAFLIN implements a neutral age verification screen upon initial launch:
+        </p>
+        <ul>
+          <li><strong>Neutral Date-of-Birth Selection:</strong> Players are prompted to enter their birth date using unselected selectors (month, day, year). The interface does not nudge, preselect any date, or pressure the user to declare an older age.</li>
+          <li><strong>Zero-DOB Retention:</strong> The complete date of birth is computed in volatile memory solely to calculate the completed age in years and is immediately discarded. The raw birth date is never persisted to disk, logged, or transmitted over any network.</li>
+          <li><strong>Persistent Safety Classification:</strong> Only the resulting high-level category (<code>child</code>, <code>teen</code>, or <code>adult</code>) is stored in local device preferences.</li>
+          <li><strong>Child-Directed Advertising Treatment (&lt;13):</strong> If the player is under 13 years old (or if the gate is skipped, incomplete, or bypassed), Google Mobile Ads is strictly configured with TagForChildDirectedTreatment enabled (<small>TFCD = yes</small>), TagForUnderAgeOfConsent unspecified (<small>TFUA = unspecified</small>, adhering to Google's mutual exclusivity rule), G-rated ad content rating (<small>MaxAdContentRating.g</small>), and Google UMP <small>tagForUnderAgeOfConsent = true</small>.</li>
+          <li><strong>Teen Treatment (13–17):</strong> Configured with TFCD disabled (<small>TFCD = no</small>), TagForUnderAgeOfConsent enabled (<small>TFUA = yes</small>), PG-rated ad content (<small>MaxAdContentRating.pg</small>), and Google UMP <small>tagForUnderAgeOfConsent = true</small>.</li>
+          <li><strong>Adult Treatment (18+):</strong> Configured with standard ad settings (<small>TFCD = no</small>, <small>TFUA = no</small>, and T-rated ad content rating <small>MaxAdContentRating.t</small>).</li>
+          <li><strong>Fail-Closed Default:</strong> If the game is played offline or without completing the age screen, all advertising parameters fail-closed to strict child-safe defaults.</li>
+          <li><strong>Age Review Settings:</strong> Players and parents can review or adjust their age category setting at any time via in-game <strong>Settings &rarr; Review Age Settings</strong>.</li>
+        </ul>
+        <p>
+          If you believe that a child has provided us with personal information outside these safeguards, please contact us at <a href="mailto:contact.zaflin@gmail.com">contact.zaflin@gmail.com</a>, and we will promptly take steps to delete any such communication.
         </p>
       </section>
 
@@ -336,8 +350,8 @@
     </main>
 
     <div class="nav-links">
-    <span>Related Document:</span>
-    <a href="terms-of-service.html">Terms of Service &rarr;</a>
+      <span>Related Document:</span>
+      <a href="terms-of-service.html">Terms of Service &rarr;</a>
     </div>
 
     <footer>
